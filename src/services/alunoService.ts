@@ -8,3 +8,7 @@ export const createAluno = async (data: Aluno) => {
 export const getAlunos = async () => {
   return await alunoModel.getAlunos();
 };
+
+export const getAlunoById = async (id: number) => {
+  return await alunoModel.getAlunoById(id);
+};

@@ -16,3 +16,8 @@ Content-Type: application/json
 
 ## GET ALL ALUNOS
 GET {{alunos_url}}/
+
+###
+
+## GET ALUNO BY ID
+GET {{alunos_url}}/1
