@@ -6,9 +6,9 @@ dotenv.config();
 
 const port = process.env.SERVER_PORT || 3000;
 
-const app = fastify({ logger: true });
+const app = fastify();
 
-app.register(alunoRoutes);
+app.register(alunoRoutes, { prefix: "/alunos" });
 
 const start = async () => {
   try {

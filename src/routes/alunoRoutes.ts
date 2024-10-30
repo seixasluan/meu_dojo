@@ -2,8 +2,8 @@ import { FastifyInstance } from "fastify";
 import * as alunoController from "../controllers/alunoController";
 
 const alunoRoutes = async (fastify: FastifyInstance) => {
-  fastify.post("/alunos", alunoController.createAluno);
-  fastify.get("/alunos", alunoController.getAlunos);
+  fastify.post("/create", alunoController.createAluno);
+  fastify.get("/", alunoController.getAlunos);
   // Outras rotas...
 };
 
